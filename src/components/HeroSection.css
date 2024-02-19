@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Bebas';
+    src: local('Bebas'), url('/public/fonts/Bebas.ttf') format('truetype');
+    font-weight: 400;
+  }
+
+@font-face {
+    font-family: 'Anta';
+    src: local('Anta'), url('/public/fonts/Anta.ttf') format('truetype');
+    font-weight: 400;
+  }
+
+#slogan{
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+#slogan > #basic_text{
+    font-family: "Anta";
+    font-size: 83px;
+    
+}
+
+#slogan > #dynamic-text{
+    font-family: 'Anta';
+    font-size: 110px;
+}
+
+video{
+    object-fit:cover;
+    width:100%;
+    height:100%;
+    /* position:fixed; */
+    position:fixed;
+    /* z-index:-1; */
+    z-index:-1;
+}
+
+.hero-container{
+    /* background: url('/Users/apple/Desktop/HTML/dash-page1/src/assets/test-pic.png');
+    background-position: center;
+    background-origin: center;
+    background-repeat: no-repeat; */
+
+    height: 100vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
+    object-fit: contain;
+}
+
+/* #title_text{
+    color:rgb(199, 205, 211);
+    margin-top: 2.3em;
+    margin-left:1cm;
+    font-size: 5em;
+}
+#basic_text{
+    color:aliceblue;
+    font-size: 1.5em;
+} */
+
+.hero-container{
+    color:aliceblue;
+    font-size: 80px;
+    margin-top: -10px;
+}
+.hero-container > h1{
+    font-family: 'Anta';
+    color:rgb(241, 241, 241);
+    font-size:70px;
+    margin-top: 150px;
+    margin-left:-680px;
+    letter-spacing: 1px;
+}
+.hero-container > #basic_text {
+/* #basic_text{ */
+    font-family: "Anta";
+    margin-top: 110px;
+    color:aliceblue;
+    font-size: 82px;
+    margin-left:-303px;
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+
+
+}
+.hero-btns {
+    margin-top: 70px; /* 增加顶部外边距 */
+    /* 其他样式保持不变 */
+  }
+
+  #dynamic-text {
+    display: inline-block;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* 翻转动画 */
+  @keyframes flip {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(180deg);
+    }
+  }
